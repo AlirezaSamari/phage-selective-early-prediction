@@ -1,0 +1,16 @@
+figure,name,file_stem
+1,Trajectory budget by cohort role,Figure_01_Trajectory_budget_by_cohort_role
+4,Solver agrees with an independent reference implementation,Figure_04_Solver_agrees_with_an_independent_reference_implementation
+6,Chemostat dynamics at 25 ug/mL nutrient,Figure_06_Chemostat_dynamics_at_25_ug_mL_nutrient
+7,Chemostat dynamics at 100 ug/mL nutrient,Figure_07_Chemostat_dynamics_at_100_ug_mL_nutrient
+8,Bacterial subpopulations under a two-phage cocktail,Figure_08_Bacterial_subpopulations_under_a_two_phage_cocktail
+9,Median bacterial trajectories by outcome class,Figure_09_Median_bacterial_trajectories_by_outcome_class
+10,Sparse assay schedule by decision stage,Figure_10_Sparse_assay_schedule_by_decision_stage
+11,Calibrated action probabilities are reliable,Figure_11_Calibrated_action_probabilities_are_reliable
+12,Precision and coverage trade-off on the tuning cohort,Figure_12_Precision_and_coverage_trade_off_on_the_tuning_cohort
+13,Risk and coverage of the frozen policy under assay and kinetic shift,Figure_13_Risk_and_coverage_of_the_frozen_policy_under_assay_and_kinetic_shift
+14,Risk of the frozen policy as latent-period variability increases,Figure_14_Risk_of_the_frozen_policy_as_latent_period_variability_increases
+15,"Rebound calls fall mainly because recall and confidence fall, and partly because rebounds become rarer",Figure_15_Rebound_calls_fall_mainly_because_recall_and_confidence_fall_and_partly_because_rebounds_become_rarer
+16,Training on the test mechanism recovers part of the discrimination lost under mechanism shift,Figure_16_Training_on_the_test_mechanism_recovers_part_of_the_discrimination_lost_under_mechanism_shift
+17,"Workflow: from a mechanistic simulator to a frozen, risk-controlled policy and its stress tests",Figure_17_Workflow_from_a_mechanistic_simulator_to_a_frozen_risk_controlled_policy_and_its_stress_tests
+18,"Same mean latent period, increasing variability: the held-out mechanisms",Figure_18_Same_mean_latent_period_increasing_variability_the_held_out_mechanisms

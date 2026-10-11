@@ -1,0 +1,11 @@
+\begin{tabular}{lrrrrlllll}
+\toprule
+Model & Accuracy & Macro-F1 & Brier & Log loss & Action AUROC & Endpoint MAE & Endpoint CRPS & 90\% interval coverage & Mean interval width \\
+\midrule
+Training prevalence & 0.345 & 0.128 & 0.724 & 1.331 & - & - & - & - & - \\
+Initial assay only (0 h), gradient boosting & 0.452 & 0.388 & 0.663 & 1.212 & - & - & - & - & - \\
+Transformer ensemble, 2 h & 0.633 & 0.59 & 0.478 & 0.824 & 0.923 & 2.025 & 1.409 & 0.906 & 8.086 \\
+Transformer ensemble, 4 h & 0.677 & 0.64 & 0.428 & 0.726 & 0.901 & 1.798 & 1.258 & 0.912 & 7.35 \\
+Transformer ensemble, 6 h & 0.723 & 0.691 & 0.375 & 0.633 & 0.926 & 1.558 & 1.09 & 0.906 & 6.238 \\
+\bottomrule
+\end{tabular}

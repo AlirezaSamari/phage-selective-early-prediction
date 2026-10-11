@@ -1,0 +1,11 @@
+\begin{tabular}{lrrrlrlrl}
+\toprule
+Mechanism & Latent-period CV & Coverage (\%) & Failure issued & Failure error [upper bound] (\%) & Rebound issued & Rebound error [upper bound] (\%) & Out-of-domain flag (\%) & Gates \\
+\midrule
+Fixed delay (control) & 0 & 5.62 & 188 & 3.7 [7.52] & 374 & 3.2 [5.54] & 2.38 & Pass \\
+Erlang k = 8 & 0.35 & 4.27 & 187 & 3.7 [7.56] & 240 & 3.8 [7.00] & 2.14 & Fail: coverage \\
+Erlang k = 4 & 0.5 & 3.16 & 185 & 3.2 [6.93] & 131 & 3.1 [7.63] & 1.83 & Fail: coverage \\
+Erlang k = 2 & 0.71 & 2.39 & 185 & 3.8 [7.64] & 54 & 3.7 [12.75] & 1.63 & Fail: rebound risk, coverage \\
+Exponential (k = 1) & 1 & 1.99 & 182 & 3.8 [7.76] & 17 & 0.0 [19.51] & 1.16 & Fail: rebound support, rebound risk, coverage \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,4 @@
+Action,Issued,Errors,Precision,Error upper bound,Support gate,Risk gate
+Failure or persistence,1098,50,0.9544626593806922,0.059597394996290354,True,True
+Rebound,2433,99,0.9593094944512947,0.049318503151846216,True,True
+Whole cascade,3531,149,0.9578023222883036,,True,

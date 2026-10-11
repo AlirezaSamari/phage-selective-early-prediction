@@ -1,0 +1,21 @@
+\begin{tabular}{llll}
+\toprule
+Check & Criterion & Observed & Status \\
+\midrule
+Phage-free chemostat steady state & |error| < 0.01 log10 vs (Cin-C*)/eps & 8.2975 vs 8.2960 & PASS \\
+Phage decay and washout & max |error| < 0.01 log10 vs exp(-(d+w)t) & 0.0033 & PASS \\
+Latent-period timing & burst at L + one step for every step size & dt=1: burst at 36 min; dt=0.5: burst at 35.5 min; dt=0.25: burst at 35.25 min & PASS \\
+Burst size & titre at burst = burst x infected cells, within 0.02 log10 & all three step sizes & PASS \\
+Independent reference solver & max |difference| < 0.005 log10 (8 random draws, 48 h) & 6.22e-14 & PASS \\
+Finite states on random draws & all outputs finite (64 draws, 3 step sizes) & True & PASS \\
+Outcome-label agreement & >= 0.95 between 1 min and 0.25 min & 1.000 (0.5 vs 0.25 min: 1.000) & PASS \\
+Step-size convergence & p95 |1 min vs 0.25 min| < 0.05 log10 & p95 = 0.0363; p95(0.5 vs 0.25) = 0.0116 & PASS \\
+Lenski Fig. 2a: coexistence level & |mean of last 25 h - analytic equilibrium| < 0.15 log10 & bacteria 6.39 vs 6.41; phage 8.47 vs 8.49 & PASS \\
+Lenski Fig. 2a: damped oscillation & amplitude(75-100 h) < amplitude(25-50 h) & 0.40 < 0.68 & PASS \\
+Lenski Fig. 2b: large oscillations, no extinction & amplitude(100) > 3 x amplitude(25); 0 < min log10 titre < 3 & 5.89 vs 0.40; min 1.42 & PASS \\
+Note: paper text vs shipped .ctl & paper text says bacteria \textasciitilde 1e7, phage \textasciitilde 1e9 (rounded) & equilibrium implied by the .ctl: 6.41, 8.49 (log10) & NOTE \\
+Fig. 2D: shorter-latency phage B outcompetes A & titre\_B > titre\_A after 1 h & B 9.90 vs A 9.13 & PASS \\
+Fig. 2D: double-resistant cells after 48 h & paper: about 1e3 cells/mL; accept 2-4 log10 (rounded statement) & 3.22 & PASS \\
+Note: Fig. 2D A-resistant cells & paper: disappear within an hour & peak 0.33, at 1 h -4.49 (log10 cells/mL) & NOTE \\
+\bottomrule
+\end{tabular}

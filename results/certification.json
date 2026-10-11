@@ -1,0 +1,10 @@
+{
+  "run_id": "646436dc7a6fbf7e08b8c1c04a0d0adfda84c6859552333a46d7335ede7411bb",
+  "certified": true,
+  "coverage": 0.05885,
+  "thresholds": {
+    "stage_0": 0.95,
+    "stage_1": 0.985,
+    "stage_2": 0.905
+  }
+}

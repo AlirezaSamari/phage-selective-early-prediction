@@ -1,0 +1,8 @@
+Cohort,Trajectories,Sustained clearance (%),Rebound (%),Partial control (%),Failure or persistence (%)
+Training,60000,23.0,13.0,29.5,34.6
+Robust training,30000,23.0,13.0,29.9,34.0
+Validation,10000,22.4,13.1,29.9,34.6
+Temperature calibration,10000,22.5,13.2,29.2,35.0
+OOD calibration,10000,22.6,12.9,29.4,35.0
+Policy tuning,30000,23.0,13.0,29.4,34.7
+Policy lockbox,30000,22.8,13.1,29.4,34.6

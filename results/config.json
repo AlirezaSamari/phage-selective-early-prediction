@@ -1,0 +1,421 @@
+{
+  "version": "cocktail_master_v8",
+  "seed": 20261002,
+  "parameters": [
+    "log10_bacteria0",
+    "growth_s_per_h",
+    "log10_adsorption_a",
+    "log10_adsorption_b",
+    "latent_a_min",
+    "latent_b_min",
+    "burst_a",
+    "burst_b",
+    "log10_mutation_a",
+    "log10_mutation_b",
+    "flow_per_h",
+    "phage_decay_a_per_h",
+    "phage_decay_b_per_h",
+    "log10_titre_a",
+    "log10_titre_b"
+  ],
+  "bounds": [
+    [
+      4,
+      8
+    ],
+    [
+      0.2,
+      1.2
+    ],
+    [
+      -12,
+      -8
+    ],
+    [
+      -12,
+      -8
+    ],
+    [
+      10,
+      60
+    ],
+    [
+      10,
+      60
+    ],
+    [
+      10,
+      300
+    ],
+    [
+      10,
+      300
+    ],
+    [
+      -10,
+      -5
+    ],
+    [
+      -10,
+      -5
+    ],
+    [
+      0,
+      0.5
+    ],
+    [
+      0,
+      0.2
+    ],
+    [
+      0,
+      0.2
+    ],
+    [
+      5,
+      10
+    ],
+    [
+      5,
+      10
+    ]
+  ],
+  "master_minutes": [
+    0,
+    15,
+    30,
+    60,
+    90,
+    120,
+    180,
+    240,
+    360
+  ],
+  "full_minutes": [
+    0,
+    15,
+    30,
+    45,
+    60,
+    75,
+    90,
+    105,
+    120,
+    135,
+    150,
+    165,
+    180,
+    195,
+    210,
+    225,
+    240,
+    255,
+    270,
+    285,
+    300,
+    315,
+    330,
+    345,
+    360,
+    375,
+    390,
+    405,
+    420,
+    435,
+    450,
+    465,
+    480,
+    495,
+    510,
+    525,
+    540,
+    555,
+    570,
+    585,
+    600,
+    615,
+    630,
+    645,
+    660,
+    675,
+    690,
+    705,
+    720,
+    735,
+    750,
+    765,
+    780,
+    795,
+    810,
+    825,
+    840,
+    855,
+    870,
+    885,
+    900,
+    915,
+    930,
+    945,
+    960,
+    975,
+    990,
+    1005,
+    1020,
+    1035,
+    1050,
+    1065,
+    1080,
+    1095,
+    1110,
+    1125,
+    1140,
+    1155,
+    1170,
+    1185,
+    1200,
+    1215,
+    1230,
+    1245,
+    1260,
+    1275,
+    1290,
+    1305,
+    1320,
+    1335,
+    1350,
+    1365,
+    1380,
+    1395,
+    1410,
+    1425,
+    1440
+  ],
+  "hours": [
+    2.0,
+    4.0,
+    6.0
+  ],
+  "allowed_classes": [
+    3,
+    1,
+    1
+  ],
+  "outcomes": [
+    "sustained_clearance",
+    "rebound",
+    "partial_control",
+    "failure_or_persistence"
+  ],
+  "channels": [
+    "total_bacteria",
+    "phage_A",
+    "phage_B"
+  ],
+  "log10_lod": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "sigma_log10": [
+    0.15,
+    0.15,
+    0.15
+  ],
+  "shard_size": 512,
+  "train_batch": 256,
+  "inference_batch": 512,
+  "epochs": 180,
+  "patience": 20,
+  "learning_rate": 0.0003,
+  "width": 72,
+  "mixture_components": 5,
+  "endpoint_loss_weight": 0.25,
+  "action_loss_weight": 1.0,
+  "ranking_loss_weight": 0.25,
+  "ood_quantile": 0.975,
+  "risk_target": 0.1,
+  "minimum_action_support": 300,
+  "minimum_coverage": 0.05,
+  "lockbox_minimum_coverage": 0.055,
+  "tuning_precision": 0.945,
+  "threshold_grid": [
+    0.7,
+    0.705,
+    0.71,
+    0.715,
+    0.72,
+    0.725,
+    0.73,
+    0.735,
+    0.74,
+    0.745,
+    0.75,
+    0.755,
+    0.76,
+    0.765,
+    0.77,
+    0.7749999999999999,
+    0.78,
+    0.7849999999999999,
+    0.79,
+    0.7949999999999999,
+    0.7999999999999999,
+    0.8049999999999999,
+    0.8099999999999999,
+    0.815,
+    0.82,
+    0.825,
+    0.83,
+    0.835,
+    0.84,
+    0.845,
+    0.85,
+    0.855,
+    0.86,
+    0.865,
+    0.87,
+    0.875,
+    0.88,
+    0.885,
+    0.89,
+    0.895,
+    0.9,
+    0.905,
+    0.91,
+    0.915,
+    0.9199999999999999,
+    0.925,
+    0.9299999999999999,
+    0.935,
+    0.94,
+    0.9450000000000001,
+    0.95,
+    0.9550000000000001,
+    0.96,
+    0.9650000000000001,
+    0.97,
+    0.9750000000000001,
+    0.98,
+    0.985,
+    0.99,
+    0.995
+  ],
+  "cohorts": [
+    {
+      "name": "train",
+      "n": 60000,
+      "seed": 20261000,
+      "scenario": {}
+    },
+    {
+      "name": "robust_train",
+      "n": 30000,
+      "seed": 20261001,
+      "scenario": {}
+    },
+    {
+      "name": "validation",
+      "n": 10000,
+      "seed": 20261002,
+      "scenario": {}
+    },
+    {
+      "name": "temperature",
+      "n": 10000,
+      "seed": 20261003,
+      "scenario": {}
+    },
+    {
+      "name": "ood_calibration",
+      "n": 10000,
+      "seed": 20261004,
+      "scenario": {}
+    },
+    {
+      "name": "policy_tuning",
+      "n": 30000,
+      "seed": 20261005,
+      "scenario": {}
+    },
+    {
+      "name": "policy_lockbox",
+      "n": 30000,
+      "seed": 20261006,
+      "scenario": {}
+    },
+    {
+      "name": "certification",
+      "n": 60000,
+      "seed": 20261007,
+      "scenario": {}
+    },
+    {
+      "name": "stress_reference",
+      "n": 10000,
+      "seed": 20262000,
+      "scenario": {}
+    },
+    {
+      "name": "stress_noise_1p5x",
+      "n": 10000,
+      "seed": 20262001,
+      "scenario": {
+        "noise": 1.5
+      }
+    },
+    {
+      "name": "stress_missing_15pct",
+      "n": 10000,
+      "seed": 20262002,
+      "scenario": {
+        "missing": 0.15
+      }
+    },
+    {
+      "name": "stress_lod_plus_0p5",
+      "n": 10000,
+      "seed": 20262003,
+      "scenario": {
+        "lod_shift": 0.5
+      }
+    },
+    {
+      "name": "stress_high_growth_low_adsorption",
+      "n": 10000,
+      "seed": 20262004,
+      "scenario": {
+        "kinetic_shift": true
+      }
+    },
+    {
+      "name": "stress_low_initial_titres",
+      "n": 10000,
+      "seed": 20262005,
+      "scenario": {
+        "low_titre": true
+      }
+    },
+    {
+      "name": "stress_combined",
+      "n": 10000,
+      "seed": 20262006,
+      "scenario": {
+        "noise": 1.5,
+        "missing": 0.15,
+        "lod_shift": 0.5,
+        "kinetic_shift": true,
+        "low_titre": true
+      }
+    }
+  ],
+  "simulator": "v8_cohort_queue_superinfection",
+  "training_augmentation_fraction": 0.35,
+  "robust_training_augmentation_fraction": 0.65,
+  "action_ensemble_size": 3,
+  "feature_dims": [
+    19,
+    19,
+    19
+  ],
+  "baseline_measurement_forced_present": false
+}

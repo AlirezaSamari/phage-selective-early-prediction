@@ -1,0 +1,16 @@
+{
+  "run_id": "646436dc7a6fbf7e08b8c1c04a0d0adfda84c6859552333a46d7335ede7411bb",
+  "thresholds": {
+    "stage_0": 0.95,
+    "stage_1": 0.985,
+    "stage_2": 0.905
+  },
+  "active_actions": {
+    "3": true,
+    "1": true
+  },
+  "lockbox_passed": true,
+  "lockbox_coverage": 0.05926666666666667,
+  "tuning_precision": 0.945,
+  "risk_target": 0.1
+}

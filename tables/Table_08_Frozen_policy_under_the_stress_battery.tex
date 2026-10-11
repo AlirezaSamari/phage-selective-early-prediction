@@ -1,0 +1,13 @@
+\begin{tabular}{lrrlrlrl}
+\toprule
+Scenario & Coverage (\%) & Failure issued & Failure error [upper bound] (\%) & Rebound issued & Rebound error [upper bound] (\%) & Out-of-domain flag (\%) & Gates \\
+\midrule
+reference & 5.69 & 192 & 2.6 [5.97] & 377 & 3.4 [5.82] & 2.24 & Pass \\
+noise ×1.5 & 6.19 & 206 & 5.8 [9.95] & 413 & 7.0 [9.93] & 3.45 & Pass \\
+15\% missing & 5.04 & 143 & 5.6 [10.73] & 361 & 6.9 [10.05] & 5.68 & Fail: failure risk, rebound risk \\
+LOD +0.5 & 2.96 & 143 & 6.3 [11.61] & 153 & 6.5 [11.69] & 4.19 & Fail: failure risk, rebound risk, coverage \\
+fast growth, weak binding & 11.11 & 992 & 4.7 [6.25] & 119 & 4.2 [9.53] & 0.68 & Pass \\
+low initial titres & 2.36 & 8 & 0.0 [36.94] & 228 & 7.5 [11.67] & 3.87 & Fail: failure support, failure risk, rebound risk, coverage \\
+combined & 0.21 & 21 & 9.5 [30.38] & 0 & - & 2.31 & Fail: failure support, failure risk, rebound support, coverage \\
+\bottomrule
+\end{tabular}

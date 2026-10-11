@@ -1,0 +1,15 @@
+Scenario,Action,Issued,Errors,Cohort,Error rate,Error upper bound,Support gate,Risk gate
+reference,Failure or persistence,192,5,10000,0.026041666666666668,0.05972320249544263,True,True
+reference,Rebound,377,13,10000,0.034482758620689655,0.058244776232673,True,True
+noise ×1.5,Failure or persistence,206,12,10000,0.05825242718446602,0.09954380567262637,True,True
+noise ×1.5,Rebound,413,29,10000,0.07021791767554479,0.09928992099513403,True,True
+15% missing,Failure or persistence,143,8,10000,0.055944055944055944,0.10725534581060449,True,False
+15% missing,Rebound,361,25,10000,0.06925207756232687,0.1005345171562744,True,False
+LOD +0.5,Failure or persistence,143,9,10000,0.06293706293706294,0.11611098177203398,True,False
+LOD +0.5,Rebound,153,10,10000,0.06535947712418301,0.11691256624501498,True,False
+"fast growth, weak binding",Failure or persistence,992,47,10000,0.047379032258064516,0.06250874461315012,True,True
+"fast growth, weak binding",Rebound,119,5,10000,0.04201680672268908,0.09533092973764726,True,True
+low initial titres,Failure or persistence,8,0,10000,0.0,0.3694166475528192,False,False
+low initial titres,Rebound,228,17,10000,0.07456140350877193,0.11669727699072723,True,False
+combined,Failure or persistence,21,2,10000,0.09523809523809523,0.3037744069139242,False,False
+combined,Rebound,0,0,10000,,,False,False

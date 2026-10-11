@@ -1,0 +1,12 @@
+\begin{tabular}{llrrrr}
+\toprule
+Test mechanism & Action & AUROC, trained on fixed delay & AUROC, trained on test mechanism & Average precision, trained on fixed delay & Average precision, trained on test mechanism \\
+\midrule
+Fixed delay (control) & Failure or persistence (2 h) & 0.925 & 0.925 & 0.841 & 0.841 \\
+Fixed delay (control) & Rebound (6 h) & 0.924 & 0.924 & 0.709 & 0.709 \\
+Erlang, k = 4 & Failure or persistence (2 h) & 0.873 & 0.895 & 0.808 & 0.824 \\
+Erlang, k = 4 & Rebound (6 h) & 0.899 & 0.91 & 0.571 & 0.597 \\
+Exponential, k = 1 & Failure or persistence (2 h) & 0.788 & 0.866 & 0.761 & 0.825 \\
+Exponential, k = 1 & Rebound (6 h) & 0.873 & 0.912 & 0.327 & 0.408 \\
+\bottomrule
+\end{tabular}

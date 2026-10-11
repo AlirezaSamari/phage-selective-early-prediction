@@ -1,0 +1,10 @@
+{
+  "python": "3.13.15",
+  "torch": "2.11.0+cu128",
+  "numpy": "2.1.3",
+  "pandas": "2.3.3",
+  "matplotlib": "3.10.0",
+  "device": "cuda",
+  "run_id": "646436dc7a6fbf7e08b8c1c04a0d0adfda84c6859552333a46d7335ede7411bb",
+  "core_sha256": "71e958153f6492ce5bf2d4267cbcde46d8af04fcf6408420405901182a0123a3"
+}

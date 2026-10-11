@@ -1,0 +1,16 @@
+Cohort,Role,Trajectories,Seed,Perturbation
+Training,Training,60000,20261000,none
+Robust training,Training,30000,20261001,none
+Validation,Selection and calibration,10000,20261002,none
+Temperature calibration,Selection and calibration,10000,20261003,none
+OOD calibration,Selection and calibration,10000,20261004,none
+Policy tuning,Threshold tuning,30000,20261005,none
+Policy lockbox,Locked-box test,30000,20261006,none
+Certification,Certification,60000,20261007,none
+Stress: reference,Stress test,10000,20262000,none
+Stress: noise ×1.5,Stress test,10000,20262001,noise=1.5
+Stress: 15% missing,Stress test,10000,20262002,missing=0.15
+Stress: LOD +0.5,Stress test,10000,20262003,lod_shift=0.5
+"Stress: fast growth, weak binding",Stress test,10000,20262004,kinetic_shift=True
+Stress: low initial titres,Stress test,10000,20262005,low_titre=True
+Stress: combined,Stress test,10000,20262006,"noise=1.5, missing=0.15, lod_shift=0.5, kinetic_shift=True, low_titre=True"
